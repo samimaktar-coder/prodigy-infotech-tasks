@@ -6,6 +6,10 @@ Welcome to the Prodigy Infotech Web Developer Internship! As an intern, you'll b
 Embark on this project to delve into the essentials of HTML and CSS, crafting a captivating and responsive landing page. Acquire the skills to organize content, implement styles, and guarantee a smooth user experience.
 <br/>
 
+**⏱️ Stopwatch**<br/>
+Dive into the world of JavaScript by crafting your very own stopwatch application! Uncover the intricacies of JavaScript functions and event handling as you bring this project to life. It's more than just code; it's a hands-on exploration that transforms your coding skills into practical mastery
+<br/>
+
 # Internship Highlights:
 Hands-on Experience: Work on real projects to reinforce theoretical knowledge.
 Collaborative Environment: Engage with a supportive team and learn the importance of collaboration in a professional setting.
