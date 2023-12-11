@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0365dc;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.first-page {
+    margin-top: 10rem;
+    text-align: center;
+    height: max-content;
+    transition: .3s all;
+}
+
+.first-page.hide {
+    transform: scale(0);
+    display: none;
+}
+
+.first-page h1 {
+    font-size: 4rem;
+}
+
+.first-page h3 {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.choose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: .5rem;
+}
+
+.choose div {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    border: 3px solid transparent;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.choose div.active {
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.choose div:first-child {
+    background-color: #d0321a;
+}
+
+.choose div:last-child {
+    background-color: #e5c306;
+}
+
+.start {
+    margin-top: 3rem;
+    background-color: #34a802;
+    border: none;
+    outline: none;
+    color: white;
+    padding: .4rem 1rem;
+    font-size: 1.1rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s all;
+}
+
+.start:active {
+    transform: scale(.85);
+}
+
+.game-board {
+    margin-top: 8rem;
+    width: 50%;
+    height: max-content;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0);
+    transition: .3s all;
+}
+
+.game-board.show {
+    transform: scale(1);
+    display: flex;
+}
+
+
+.name-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgb(228, 164, 2);
+    border-radius: .5rem;
+    width: 15rem;
+    overflow: hidden;
+    padding: .3rem;
+}
+
+.name-slide h4 {
+    font-size: 1.1rem;
+    position: relative;
+    flex-basis: 50%;
+    padding: .4rem 1.2rem;
+    text-align: center;
+    z-index: 10;
+}
+
+.name-slide span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 80%;
+    border-radius: .5rem;
+    background-color: rgba(139, 235, 70, 0.788);
+    z-index: 1;
+    transition: .3s all;
+}
+
+.name-slide.left span {
+    left: .3rem;
+}
+
+.name-slide.right span {
+    right: .3rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 7rem);
+    grid-auto-rows: 7rem;
+    margin-top: 2rem;
+    gap: .2rem;
+}
+
+.board div {
+    background-color: rgba(255, 255, 255, 0.455);
+    border-radius: .3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.board div.cross {
+    background-color: #d0321a;
+    pointer-events: none;
+}
+
+.board div.circle {
+    background-color: #e5c306;
+    pointer-events: none;
+}
+
+.win-page {
+    margin-top: 10rem;
+    display: none;
+}
+
+.win-page.show {
+    display: block;
+}
+
+.win-page div {
+    background-color: white;
+    color: #0365dc;
+    padding: 1.5rem 3rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+}
+
+.win-page button {
+    background-color: #34a802;
+    border: none;
+    outline: none;
+    color: white;
+    padding: .5rem 1.5rem;
+    width: 8rem;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    display: block;
+    margin-inline: auto;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: .3s;
+}
+
+.win-page button:active {
+    transform: scale(.85);
+}

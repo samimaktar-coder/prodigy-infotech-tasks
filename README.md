@@ -10,6 +10,10 @@ Embark on this project to delve into the essentials of HTML and CSS, crafting a 
 Dive into the world of JavaScript by crafting your very own stopwatch application! Uncover the intricacies of JavaScript functions and event handling as you bring this project to life. It's more than just code; it's a hands-on exploration that transforms your coding skills into practical mastery
 <br/>
 
+**❌⭕ Tic-Tac-Toe Game**<br/>
+Take your JavaScript skills to the next level by building a classic tic-tac-toe game. This project will involve implementing game logic, user interactions, and styling, giving you a comprehensive look at front-end development.
+<br/>
+
 # Internship Highlights:
 Hands-on Experience: Work on real projects to reinforce theoretical knowledge.
 Collaborative Environment: Engage with a supportive team and learn the importance of collaboration in a professional setting.

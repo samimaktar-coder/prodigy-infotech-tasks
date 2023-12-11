@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <div class="container" >
+
+        <div class="first-page">
+            <h1>TIC-TAC-TOE</h1>
+            <h3>CHOOSE</h3>
+            <div class="choose">
+                <div data-sign="cross" class="active"><i class="ri-close-fill"></i></div>
+                <div data-sign="circle"><i class="ri-circle-line"></i></div>
+            </div>
+            <button class="start">Start Game</button>
+        </div>
+
+
+        <div class="game-board">
+            <div class="name-slide left">
+                <h4>You</h4>
+                <h4>Computer</h4>
+                <span></span>
+            </div>
+            <div class="board">
+                <div data-index="0"></div>
+                <div data-index="1"></div>
+                <div data-index="2"></div>
+                <div data-index="3"></div>
+                <div data-index="4"></div>
+                <div data-index="5"></div>
+                <div data-index="6"></div>
+                <div data-index="7"></div>
+                <div data-index="8"></div>
+            </div>
+        </div>
+
+        <div class="win-page">
+            <div>
+                <h1 class="win-text"></h1>
+            </div>
+            <button class="restart">Restart</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
