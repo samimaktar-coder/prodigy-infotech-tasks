@@ -72,6 +72,11 @@ emptyBoxes.forEach(box => {
 });
 
 
+function drawMatch() {
+    let result = Array.from(squares).every(square => square.classList.contains('cross') || square.classList.contains('circle'));
+    return result;
+};
+
 function checkForWin() {
     let winPatterns = [
         [0, 1, 2],
@@ -91,9 +96,11 @@ function checkForWin() {
             squares[pattern[2]].classList.contains('cross')
         ) {
             gameBoard.style.pointerEvents = 'none';
+            restartBtn.style.pointerEvents = 'none';
             setTimeout(() => {
                 gameBoard.classList.remove('show');
                 winPage.classList.add('show');
+                restartBtn.style.pointerEvents = 'auto';
                 if (playerChoice === 'cross') {
                     winText.textContent = 'You won this match.';
                 } else {
@@ -106,15 +113,26 @@ function checkForWin() {
             squares[pattern[2]].classList.contains('circle')
         ) {
             gameBoard.style.pointerEvents = 'none';
+            restartBtn.style.pointerEvents = 'none';
             setTimeout(() => {
                 gameBoard.classList.remove('show');
                 winPage.classList.add('show');
+                restartBtn.style.pointerEvents = 'auto';
                 if (playerChoice === 'circle') {
                     winText.textContent = 'You won this match.';
                 } else {
                     winText.textContent = 'Computer won this match.';
                 }
-            }, 1000);
+            }, 500);
+        } else if (drawMatch()) {
+            gameBoard.style.pointerEvents = 'none';
+            restartBtn.style.pointerEvents = 'none';
+            setTimeout(() => {
+                gameBoard.classList.remove('show');
+                winPage.classList.add('show');
+                restartBtn.style.pointerEvents = 'auto';
+                winText.textContent = "It's a tie.";
+            }, 500);
         }
     });
 }
