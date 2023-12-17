@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./drop.png" type="image/x-icon">
+    <!--!========== REMIX-ICON ==========-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>WeatherWatch</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="#">
+            <input type="text" class="input" placeholder="Enter any city">
+            <button type="submit"><i class="ri-search-line"></i></button>
+        </form>
+        <div class="weather-info">
+            <img src="./images/drizzle.png" class="weather-img">
+            <h1><span class="temperature"></span>°c</h1>
+            <h2 class="location"></h2>
+            <div class="more-data">
+                <div class="humidity">
+                    <img src="./images/humidity.png">
+                    <div class="info">
+                        <h5><span class="humidity-info"></span>%</h5>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <img src="./images/wind.png">
+                    <div class="info">
+                        <h5><span class="wind-info"></span> km/h</h5>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
